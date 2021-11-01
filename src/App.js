@@ -19,7 +19,6 @@ function App() {
   const [messageSignUp, setMessageSignUp] = useState(null);
   const [messageSignIn, setMessageSignIn] = useState(null);
   const [user, setUser] = useState({});
-  const [loggedIn, setLoggedIn] = useState(user);
 
   onAuthStateChanged(auth, (currentUser) => {
     setUser(currentUser);

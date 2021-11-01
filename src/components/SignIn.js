@@ -14,14 +14,14 @@ function SignIn({ signinEmailRef, signinPasswordRef, signin, message }) {
         <div className="rounded-md shadow-sm -space-y-px text-left">
           <div className="">
             <label
-              htmlFor="email-address"
+              htmlFor="email-address-signin"
               className="text-green-700 font-semibold"
             >
               Email address
             </label>
             <input
               ref={signinEmailRef}
-              id="email-address"
+              id="email-address-signin"
               name="email"
               type="email"
               autoComplete="email"
@@ -31,12 +31,15 @@ function SignIn({ signinEmailRef, signinPasswordRef, signin, message }) {
             />
           </div>
           <div className="py-4">
-            <label htmlFor="password" className="text-green-700 font-semibold">
+            <label
+              htmlFor="password-signin"
+              className="text-green-700 font-semibold"
+            >
               Password
             </label>
             <input
               ref={signinPasswordRef}
-              id="password"
+              id="password-signin"
               name="password"
               type="password"
               autoComplete="current-password"
